@@ -1,0 +1,241 @@
+/*CSS SIDE BAR*/
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -17rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+.bg-shine {
+	background: #85b86b;
+	background-repeat: repeat;
+	background-position: left top;
+	box-shadow: 3px 0px 5px 0px      #F1F3FA;
+	font-family: 'Consolas';
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.bg-transparant {
+	background: #85b86b !important;
+	border:0px;
+	color:white !important;
+  text-align: center;
+}
+
+.bg-transparant>i {
+	padding-right: 10px;
+}
+
+.bg-transparant:hover ,.bg-transparant:focus {
+	background-color: transparent;
+	color: orange;
+
+}
+.grup-sidebar{
+  padding: 15px 50px 50px 50px;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 17rem;
+}
+
+#page-content-wrapper {
+  min-width: 100%;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -17rem;
+  }
+}
+
+
+
+/* END CSS SIDE BAR*/
+
+/*CSS NAV BAR*/
+.bg-navbar{
+  color:      #333333;
+  background-color:      #FFFFFF;
+  background-repeat: repeat;
+  background-position: left top;
+  border-bottom: 1px solid  #F3F3F3;
+  box-shadow: 0px 5px 4px 0px #F3F3F3;
+  font-family: Arial Black;
+  font-size: 13px;
+  font-weight: 900;
+  color:      #CCCCCC;
+
+}
+
+/*BUTTON TOOGLE SIDE BAR*/
+.button-sidebar{
+  background-color: #FFFFFF;
+  color: rgb(0,0,0,.5);
+  border-color:rgba(0,0,0,.1);
+  outline: none;
+}
+.button-sidebar:hover, .button-sidebar:focus, .button-sidebar:active,.button-sidebar:disabled{
+  color: #42C2C1;
+  cursor: not-allowed;
+  background-color: #FFFFFF;
+  border-color:#42C2C1;
+}
+.button-sidebar:not(:disabled):not(.disabled):active, .button-sidebar:not(:disabled):not(.disabled).active,
+.show > .button-sidebar.dropdown-toggle {
+  color: #42C2C1;
+  background-color: #FFFFFF;
+  border-color:#42C2C1;
+}
+
+
+
+/*END BUTTON TOOGLE SIDE BAR*/
+
+/*DROPDOWN USER*/
+dropdown-profile>li {
+  padding: 0px 10px 0px 10px;
+}
+.dropdown-profile>li>a {
+  color: rgb(0,0,0,.5);
+  text-decoration: none;
+  font-family: 'Consolas';
+  font-size:13px;
+
+}
+.dropdown-profile>li>a:hover {
+  color:#42C2C1;
+
+
+}
+
+.button-user{
+  background-color: transparent;
+  font-family: 'Consolas';
+  font-size: 14px;
+  color: #313435;
+  float: right !important;
+}
+
+.user-photo {
+  width:40px; 
+  height:40px;
+  border-radius: 50%!important;
+}
+
+.dropdown-profile{
+  right: 0;
+  left:auto;
+  min-width: 180px;
+  margin-right:12px;
+  padding: 10px;
+}
+/*END DROPDOWN USER*/
+/*SEARCH BUTTON*/
+#demo-2>input {
+  outline: none;
+}
+#demo-2>input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: 'Consolas';
+  font-size: 100%;
+  font-weight: 200px;
+}
+
+#demo-2>input[type=search] {
+  background: #FFFFFF url('img/search-icon.png') no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 70%;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+#demo-2>input[type=search]:focus {
+  width: 70%;
+  background-color: #fff;
+  border-color: #42C2C1;
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+#demo-2 input[type=search] {
+  width: 15px;
+  padding-left: 10px;
+  color: transparent;
+  cursor: pointer;
+}
+
+#demo-2 input[type=search]:hover {
+  background-color: #fff;
+}
+
+#demo-2 input[type=search]:focus {
+  width: 70%;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+
+}
+
+#demo-2 input:-moz-placeholder {
+  color: transparent;
+}
+
+#demo-2 input::-webkit-input-placeholder {
+  color: transparent;
+}
+/*ENDSEARCH BUTTON*/
+/* END CSS NAV BAR*/
+body {
+    background-color: #FAFBFE;
+  }
+  #sidebar-lal {
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+  .ul-navbar-list a{
+      padding: 10px;
+      color: white;
+  }
+  
+  .ul-navbar-list a:hover{
+    color: #85b86b;
+    text-decoration: none;
+  }
+
+  .isi{
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 0px 5px 4px 0px #F3F3F3;
+
+  }
