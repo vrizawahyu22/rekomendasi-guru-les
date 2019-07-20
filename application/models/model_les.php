@@ -91,4 +91,15 @@
 			$this->db->delete($table);
 		}
 		
+		public function getGuruWhere($mapel, $jenjang, $jam_mengajar){
+			$query = $this->db->where('jenjang_pendidikan =', $jenjang);
+			$query = $this->db->where('jam_mengajar <=', $jam_mengajar); 
+			$query = $this->db->like('bidang_keahlian', $mapel, 'both');
+			$query = $this->db->get('data_guru');
+			return $query->result_array();
+		}
+
+		public function getBobot($table){
+			return $this->db->get($table)->result_array();
+		}
 	}

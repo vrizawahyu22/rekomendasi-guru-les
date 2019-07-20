@@ -8,10 +8,9 @@
   <!--meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Organic Store Responsive web template"
-  />
+  <meta name="keywords" content="Organic Store Responsive web template" />
   <script>
-    addEventListener("load", function () {
+    addEventListener("load", function() {
       setTimeout(hideURLbar, 0);
     }, false);
 
@@ -49,8 +48,12 @@
           <li><a href="<?php echo base_url(); ?>index.php/brainy_les/cariguru">Cari Guru</a></li>
           <li><a href="<?php echo base_url(); ?>index.php/brainy_les/about_us">Tentang Kami</a></li>
           <li><a href="<?php echo base_url(); ?>index.php/brainy_les/bantuan">Bantuan</a></li>
-          <li><form action="login.php"><button type="submit" class="btn login">Login</button></form></li>
-          <li><form action="daftar.php"><button type="submit" class="btn daftar">Daftar</button></form></li>
+          <li>
+            <form action="login.php"><button type="submit" class="btn login">Login</button></form>
+          </li>
+          <li>
+            <form action="daftar.php"><button type="submit" class="btn daftar">Daftar</button></form>
+          </li>
         </ul>
       </nav>
       <!-- //nav -->
@@ -65,44 +68,44 @@
     <!-- //header -->
   </div>
   <div class="container">
-  <form action="action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <label for="jenjang"></label>Jenjang Pendidikan</div>
-      <div class="col-75">
-        <select id="jenjang" name="Jenjang Pendidikan">
-          <option value="sd">SD</option>
-          <option value="smp">SMP</option>
-          <option value="sma">SMA</option>
-        </select>
+    <form action="<?php echo base_url() . 'index.php/brainy_les/wp'?>" method="POST">
+      <div class="row">
+        <div class="col-25">
+          <label for="jenjang"></label>Jenjang Pendidikan</div>
+        <div class="col-75">
+          <select id="jenjang" name="jenjang">
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
+          </select>
+        </div>
       </div>
-    </div>
-        <div class="row">
-      <div class="col-25">
-        <label for="mapel">Mata Pelajaran</label>
+      <div class="row">
+        <div class="col-25">
+          <label for="mapel">Mata Pelajaran</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="mapel" name="mapel" placeholder="   Mata Pelajaran">
+        </div>
       </div>
-      <div class="col-75">
-        <input type="text" id="mapel" name="mapel" placeholder="   Mata Pelajaran">
+      <div class="row">
+        <div class="col-25">
+          <label for="sesi"></label>Banyak Pertemuan/Minggu</div>
+        <div class="col-75">
+          <select id="jenjang" name="pertemuan">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="sesi"></label>Banyak Pertemuan/Minggu</div>
-      <div class="col-75">
-        <select id="jenjang" name="Jenjang Pendidikan">
-          <option value="sd">1</option>
-          <option value="smp">2</option>
-          <option value="sma">3</option>
-        </select>
+      <div class="row">
+        <input type="submit" value="Submit">
       </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
-</div>
+    </form>
+  </div>
 
-    <!-- footer -->
+  <!-- footer -->
   <section class="footer-w3layouts-bottem py-lg-4 py-md-3 py-sm-3 py-3">
     <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
       <div class="row ">
@@ -114,7 +117,8 @@
                 <li class="mb-2">
                   <h6>Alamat</h6>
                 </li>
-                <li><p>Jln. Veteran No.142
+                <li>
+                  <p>Jln. Veteran No.142
                     <br>Malang.</p>
                 </li>
               </ul>
@@ -176,4 +180,4 @@
   </footer>
   <!--//footer-copy-right -->
 </body>
-  <!-- //banner -->
+<!-- //banner -->
