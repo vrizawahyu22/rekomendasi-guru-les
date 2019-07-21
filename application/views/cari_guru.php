@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="<?php echo base_url();?>assets/jquery/jquery-ui.css">
    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  </head>
- <body style="background-image: url(assets/img/background13.jpeg);">
+ <body style="background-image: url(<?php echo base_url();?>assets/img/background13.jpeg);">
   <div class="container shadow-lg p-3 mb-10 bg-grey rounded" style="background-color: white; margin-top: 200px;">
     <h3 class="title text-center mb-2">Cari Guru</h3><br>
     <form style="margin-left: 150px;padding-bottom: 50px;" action="">
