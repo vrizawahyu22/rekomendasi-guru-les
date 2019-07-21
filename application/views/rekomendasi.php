@@ -25,8 +25,8 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
             </blockquote>
             <p> <i class="glyphicon glyphicon-gift"></i> 10 January 1997
                 <br
@@ -45,8 +45,8 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
             </blockquote>
             <p> <i class="glyphicon glyphicon-gift"></i> 10 January 1997
                 <br
