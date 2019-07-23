@@ -2,7 +2,6 @@
 <html>
 <head>
   <title></title>
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/navbar_sidebar.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -10,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-color: #FAFBFE">
+<body style="background-image: url(<?php echo base_url(); ?>assets/img/background8.jpg);">
   <div class="container shadow p-3 mb-5 bg-white rounded" style="background-color: #ffffff; width: 750px;margin-top: 50px">
   <form>
     <h3>Form Permintaan Belajar</h3><br><br>
@@ -43,6 +42,10 @@
       <input type="text" class="form-control" id="mp" aria-describedby="mp" placeholder="Mata pelajaran">
     </div>
     <div class="form-group">
+      <label for="sesi">Jumlah Pertemuan/Minggu</label>
+      <input type="Pertemuan" class="form-control" id="Pertemuan" aria-describedby="Pertemuan" placeholder="">
+    </div>
+    <div class="form-group">
       <label for="paketles">Paket Les</label>
       <select class="form-control" type="text" id="example-text-input">
             <option value="1">1 Bulan</option>
@@ -51,14 +54,6 @@
               <option value="4">4 Bulan</option>
               <option value="5">5 Bulan</option>
               <option value="6">6 Bulan</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="sesi">Jumlah Sesi Per Minggu</label>
-      <select class="form-control" type="text" id="example-text-input">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
       </select>
     </div>
     <div class="form-group">
@@ -71,7 +66,7 @@
     </div>
     <div class="form-group">
       <label for="target">Target Yang Ingin Dicapai</label>
-      <input type="text" class="form-control" id="target" aria-describedby="target" placeholder="Target atau keinginan anda" style="height: 200px;">
+      <textarea type="text" class="form-control" id="target" aria-describedby="target" placeholder="Target atau keinginan anda" style="height: 200px;"></textarea>
       <small id="emailHelp" class="form-text text-muted">Target atau keinginan anda yang ingin dicapai selama melakukan bimbingan belajar.</small>
     </div>
     <div class="form-check">

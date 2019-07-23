@@ -14,13 +14,13 @@ class brainy_les extends CI_Controller
 	// }
 	public function home()
 	{
-		$this->load->view("a_login");
+		$this->load->view("home");
 		//$this->load->view("navbar3");
 		//$this->load->view("a_dashboard");
 	}
 	public function cariguru()
 	{
-		$this->load->view("cari-guru");
+		$this->load->view("cari_guru");
 	}
 	public function about_us()
 	{
